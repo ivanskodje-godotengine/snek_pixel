@@ -1,0 +1,70 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://data/main/main.gd" type="Script" id=1]
+[ext_resource path="res://data/scoreboard/scoreboard.tscn" type="PackedScene" id=2]
+[ext_resource path="res://resources/sfx/move.wav" type="AudioStream" id=3]
+[ext_resource path="res://resources/sfx/crash.wav" type="AudioStream" id=4]
+[ext_resource path="res://resources/sfx/target.wav" type="AudioStream" id=5]
+[ext_resource path="res://resources/music/insanity_loop_2.ogg" type="AudioStream" id=6]
+
+[node name="main" type="Control" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+script = ExtResource( 1 )
+_sections_unfolded = [ "Anchor", "Grow Direction", "Hint", "Margin", "Mouse", "Rect", "Size Flags" ]
+pixel_size = 32
+screen_pixels_x = 30
+screen_pixels_y = 30
+spawn_padding = 5
+default_snek_length = 3
+default_tick_delay = 0.15
+
+[node name="scoreboard" parent="." index="0" instance=ExtResource( 2 )]
+
+[node name="sfx" type="Node" parent="." index="1"]
+
+[node name="move" type="AudioStreamPlayer" parent="sfx" index="0"]
+
+stream = ExtResource( 3 )
+volume_db = 0.0
+autoplay = false
+mix_target = 0
+bus = "Master"
+_sections_unfolded = [ "Pause" ]
+
+[node name="crash" type="AudioStreamPlayer" parent="sfx" index="1"]
+
+stream = ExtResource( 4 )
+volume_db = 0.0
+autoplay = false
+mix_target = 0
+bus = "Master"
+_sections_unfolded = [ "Pause" ]
+
+[node name="target" type="AudioStreamPlayer" parent="sfx" index="2"]
+
+stream = ExtResource( 5 )
+volume_db = 0.0
+autoplay = false
+mix_target = 0
+bus = "Master"
+_sections_unfolded = [ "Pause" ]
+
+[node name="bg_music" type="AudioStreamPlayer" parent="." index="2"]
+
+stream = ExtResource( 6 )
+volume_db = 0.0
+autoplay = true
+mix_target = 2
+bus = "Master"
+
+

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/crash.wav-7bdf4684d0fbaec8eea7c183fa68eae1.sample"
+
+[deps]
+
+source_file="res://resources/sfx/crash.wav"
+source_md5="8cbcfd2c45449ada2c938471fa878569"
+
+dest_files=[ "res://.import/crash.wav-7bdf4684d0fbaec8eea7c183fa68eae1.sample" ]
+dest_md5="7fbd68f62bef2d4569eb9b8756d2f380"
+
+[params]
+
+force/8_bit=true
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

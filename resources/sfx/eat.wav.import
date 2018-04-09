@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/eat.wav-c284fbd74c6d7c1b732a141e08e00520.sample"
+
+[deps]
+
+source_file="res://resources/sfx/eat.wav"
+source_md5="da14a38dd26f26eaf3f98b5d77fe0390"
+
+dest_files=[ "res://.import/eat.wav-c284fbd74c6d7c1b732a141e08e00520.sample" ]
+dest_md5="dc3019e4cd85522021009fd00980685d"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0
